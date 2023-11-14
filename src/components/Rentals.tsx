@@ -21,7 +21,7 @@ export default function Rentals ({ name }:id) {
             </div>
             <div className="flex my-4 gap-2 justify-center w-[80%] items-center flex-wrap">
                 {types.map((t) => (
-                    <div className={element}>
+                    <div className={element} key={t.name}>
                         <Image src={t.img} alt={t.name} />
                         <p>{t.name}</p>
                     </div>
